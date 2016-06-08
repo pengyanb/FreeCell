@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  FreeCell
+
+  Created by Yanbing Peng on 4/06/16.
+  Copyright © 2016 Yanbing Peng. All rights reserved.
+*/
+
+
+"AlertNewGameTitle" = "New Game";
+"AlertNewGameMessage" = "Start over?";
+"AlertNewGameRestartButton" = "Restart";
+"AlertNewGameCancelButton" = "Cancel";
+
+"PageTitleMove" = "Move";
+"PageTitleTime" = "Time";
+
+"AlertWinTitle" = "Congratulation";
+"AlertWinMessage" = "You win!";
+"AlertWinCancelButton" = "OK";
+
+"AlertWarningTitle" = "Warning";
+"AlertWarningMessage1" = "You don't have enough free cells to move that many cards.";
+"AlertWarningMessage2" = "Card color in the eight columns must alternate between red and black.";
+"AlertWarningCancelButton" = "OK";
+
+"AlertTutorialTitle" = "How to play";
+"AlertTutorialMessage1" = "The goal is to complete four stacks of same suit cards from A to K in the upper-right corner.";
+"AlertTutorialMessage2" = "Cards in the eight columns can be moved on to each other in desceding order and must alternate between red and black. For example, you can put a black Q on a red K.";
+"AlertTutorialMessage3" = "In the upper-left corner are four free cells, where you can temporarily store any single card during play.";
+"AlertTutorialMessage4" = "Once you complete a card on top-right corner, you can't move it back.";
+"AlertTutorialMessage5" = "When moving a stack of sequential cards between the eight columns, the maximum number of moveable cards equal to the number of free cells available plus one.";
+"AlertTutorialMessage6" = "When you have an empty column, you can move any stack of cards there as long as you have enough free cells allowing you make the move.";
+
+"AlertTutorialCloseButton" = "Close";
+"AlertTutorialBackButton" = "Back";
+"AlertTutorialNextButton" = "Next";
+"AlertTutorialNotShowAgainButton" = "Do not show again";

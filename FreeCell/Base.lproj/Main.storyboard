@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dxd-up-Sl4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Moves: 0 Time: 00:00-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FreeCellViewController" customModule="FreeCell" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +19,363 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFB-T1-WqT" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="20" y="72" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bFB-T1-WqT" secondAttribute="height" multiplier="2:3" id="iVo-FW-vyi"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpace"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkw-ba-k5E" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="76" y="72" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpace"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3l-W4-ZmA" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="132" y="72" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpace"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZC-sU-Umj" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="188" y="72" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpace"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vz-a7-eSa">
+                                <rect key="frame" x="244" y="72" width="112" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lyh-cc-Tg9" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="364" y="72" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpaceSpade"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e9m-fe-dhj" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="476" y="72" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpaceClub"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZJ-6z-1ob" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="532" y="72" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpaceDiamond"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0y6-Od-fs9" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="70" y="144" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0y6-Od-fs9" secondAttribute="height" multiplier="2:3" id="3r7-OL-uCe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpace"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3r7-OL-uCe"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJw-uc-swJ" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="126" y="144" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fJw-uc-swJ" secondAttribute="height" multiplier="2:3" id="6dm-Ye-t1A"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpace"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6dm-Ye-t1A"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xuc-Wz-246" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="182" y="144" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xuc-Wz-246" secondAttribute="height" multiplier="2:3" id="eVm-ED-kZI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpace"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eVm-ED-kZI"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hO5-KD-vLq" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="238" y="144" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hO5-KD-vLq" secondAttribute="height" multiplier="2:3" id="lB3-2t-gZv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpace"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lB3-2t-gZv"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeG-tu-PV0" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="314" y="144" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xeG-tu-PV0" secondAttribute="height" multiplier="2:3" id="iNH-ng-qlN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpace"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iNH-ng-qlN"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPU-yv-M4H" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="370" y="144" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JPU-yv-M4H" secondAttribute="height" multiplier="2:3" id="Tam-NC-7xv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpace"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Tam-NC-7xv"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0g5-jK-eQF" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="482" y="144" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0g5-jK-eQF" secondAttribute="height" multiplier="2:3" id="UH3-AY-Zgj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpace"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="UH3-AY-Zgj"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZ8-m9-cu3">
+                                <rect key="frame" x="294" y="144" width="12" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eZ8-m9-cu3" secondAttribute="height" multiplier="2:3" id="3Lw-9b-ScR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3Lw-9b-ScR"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22A-Bg-eVA">
+                                <rect key="frame" x="532" y="508" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="22A-Bg-eVA" secondAttribute="height" multiplier="2:3" id="kN3-dc-Dp5"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kN3-dc-Dp5"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uJ-Iy-LWv" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="426" y="144" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1uJ-Iy-LWv" secondAttribute="height" multiplier="2:3" id="FE5-Cj-2Vq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpace"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FE5-Cj-2Vq"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZC-oB-MsR" customClass="GADBannerView">
+                                <rect key="frame" x="140" y="550" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="I7Y-Q5-lhn"/>
+                                    <constraint firstAttribute="width" constant="320" id="zJ4-Jv-FZa"/>
+                                </constraints>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6B1-k9-19r" customClass="PokerView" customModule="FreeCell" customModuleProvider="target">
+                                <rect key="frame" x="420" y="72" width="48" height="72"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="pokerImageName" value="CardSpaceHeart"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1uJ-Iy-LWv" firstAttribute="width" secondItem="JPU-yv-M4H" secondAttribute="width" id="1Rq-18-QtO"/>
+                            <constraint firstItem="b3l-W4-ZmA" firstAttribute="leading" secondItem="vkw-ba-k5E" secondAttribute="trailing" constant="8" symbolic="YES" id="1mk-BX-3Rr"/>
+                            <constraint firstItem="eZ8-m9-cu3" firstAttribute="height" secondItem="bFB-T1-WqT" secondAttribute="height" id="24o-C5-2Gb"/>
+                            <constraint firstItem="xeG-tu-PV0" firstAttribute="height" secondItem="hO5-KD-vLq" secondAttribute="height" id="2o7-Mh-deg"/>
+                            <constraint firstItem="eZ8-m9-cu3" firstAttribute="leading" secondItem="hO5-KD-vLq" secondAttribute="trailing" constant="8" symbolic="YES" id="3pZ-4s-DOA"/>
+                            <constraint firstItem="hO5-KD-vLq" firstAttribute="centerY" secondItem="xuc-Wz-246" secondAttribute="centerY" id="5DL-dW-HeQ"/>
+                            <constraint firstItem="hO5-KD-vLq" firstAttribute="leading" secondItem="xuc-Wz-246" secondAttribute="trailing" constant="8" symbolic="YES" id="5GY-dY-xMm"/>
+                            <constraint firstItem="8vz-a7-eSa" firstAttribute="height" secondItem="bZC-sU-Umj" secondAttribute="height" id="5Wc-RZ-FPD"/>
+                            <constraint firstItem="eZ8-m9-cu3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7v7-4t-6ZF"/>
+                            <constraint firstItem="8vz-a7-eSa" firstAttribute="leading" secondItem="bZC-sU-Umj" secondAttribute="trailing" constant="8" symbolic="YES" id="8SC-xm-QZe"/>
+                            <constraint firstItem="8vz-a7-eSa" firstAttribute="width" secondItem="bZC-sU-Umj" secondAttribute="width" multiplier="7:3" id="8jn-Bo-Mak"/>
+                            <constraint firstItem="1uJ-Iy-LWv" firstAttribute="height" secondItem="JPU-yv-M4H" secondAttribute="height" id="9M7-gf-Xet"/>
+                            <constraint firstItem="xuc-Wz-246" firstAttribute="leading" secondItem="fJw-uc-swJ" secondAttribute="trailing" constant="8" symbolic="YES" id="AXU-ph-txy"/>
+                            <constraint firstItem="bZC-sU-Umj" firstAttribute="leading" secondItem="b3l-W4-ZmA" secondAttribute="trailing" constant="8" symbolic="YES" id="Cgd-EV-PxN"/>
+                            <constraint firstItem="e9m-fe-dhj" firstAttribute="centerY" secondItem="6B1-k9-19r" secondAttribute="centerY" id="DSh-YT-Rza"/>
+                            <constraint firstItem="fJw-uc-swJ" firstAttribute="leading" secondItem="0y6-Od-fs9" secondAttribute="trailing" constant="8" symbolic="YES" id="DmC-Ji-UH8"/>
+                            <constraint firstItem="eZ8-m9-cu3" firstAttribute="width" secondItem="bFB-T1-WqT" secondAttribute="width" multiplier="1:4" id="EHm-vV-iKE"/>
+                            <constraint firstItem="JPU-yv-M4H" firstAttribute="leading" secondItem="xeG-tu-PV0" secondAttribute="trailing" constant="8" symbolic="YES" id="GBu-JP-BEt"/>
+                            <constraint firstItem="Lyh-cc-Tg9" firstAttribute="leading" secondItem="8vz-a7-eSa" secondAttribute="trailing" constant="8" symbolic="YES" id="JhZ-jl-VYh"/>
+                            <constraint firstItem="6B1-k9-19r" firstAttribute="centerY" secondItem="Lyh-cc-Tg9" secondAttribute="centerY" id="KhS-5U-rGn"/>
+                            <constraint firstItem="e9m-fe-dhj" firstAttribute="width" secondItem="6B1-k9-19r" secondAttribute="width" id="Kmc-4g-L6r"/>
+                            <constraint firstItem="22A-Bg-eVA" firstAttribute="width" secondItem="GZJ-6z-1ob" secondAttribute="width" id="L9S-Ca-My1"/>
+                            <constraint firstItem="Lyh-cc-Tg9" firstAttribute="width" secondItem="8vz-a7-eSa" secondAttribute="width" id="NTM-wW-fYB"/>
+                            <constraint firstItem="hO5-KD-vLq" firstAttribute="width" secondItem="xuc-Wz-246" secondAttribute="width" id="NYf-YI-bah"/>
+                            <constraint firstItem="1uJ-Iy-LWv" firstAttribute="centerY" secondItem="JPU-yv-M4H" secondAttribute="centerY" id="QAG-SV-iEU"/>
+                            <constraint firstItem="0g5-jK-eQF" firstAttribute="leading" secondItem="1uJ-Iy-LWv" secondAttribute="trailing" constant="8" symbolic="YES" id="RJ1-uX-akr"/>
+                            <constraint firstItem="bZC-sU-Umj" firstAttribute="centerY" secondItem="b3l-W4-ZmA" secondAttribute="centerY" id="THP-M0-Mah"/>
+                            <constraint firstItem="vkw-ba-k5E" firstAttribute="height" secondItem="bFB-T1-WqT" secondAttribute="height" id="UCD-Al-WzK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="22A-Bg-eVA" secondAttribute="bottom" constant="20" id="UUK-Vz-St8"/>
+                            <constraint firstItem="6B1-k9-19r" firstAttribute="width" secondItem="Lyh-cc-Tg9" secondAttribute="width" id="Uig-Vl-hNx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QZC-oB-MsR" secondAttribute="bottom" id="V8h-mk-NOw"/>
+                            <constraint firstItem="QZC-oB-MsR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VM4-k7-2s0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GZJ-6z-1ob" secondAttribute="trailing" id="VuJ-cx-wNx"/>
+                            <constraint firstItem="hO5-KD-vLq" firstAttribute="centerY" secondItem="eZ8-m9-cu3" secondAttribute="centerY" id="W0M-rw-MNk"/>
+                            <constraint firstItem="GZJ-6z-1ob" firstAttribute="height" secondItem="e9m-fe-dhj" secondAttribute="height" id="XRA-ka-OdO"/>
+                            <constraint firstItem="JPU-yv-M4H" firstAttribute="centerY" secondItem="xeG-tu-PV0" secondAttribute="centerY" id="YY9-hG-7oS"/>
+                            <constraint firstItem="0g5-jK-eQF" firstAttribute="width" secondItem="1uJ-Iy-LWv" secondAttribute="width" id="YdP-Ef-EUS"/>
+                            <constraint firstItem="vkw-ba-k5E" firstAttribute="leading" secondItem="bFB-T1-WqT" secondAttribute="trailing" constant="8" symbolic="YES" id="Yrw-se-zbX"/>
+                            <constraint firstItem="22A-Bg-eVA" firstAttribute="height" secondItem="GZJ-6z-1ob" secondAttribute="height" id="aUG-VT-NQN"/>
+                            <constraint firstItem="bZC-sU-Umj" firstAttribute="height" secondItem="b3l-W4-ZmA" secondAttribute="height" id="bOj-av-zGS"/>
+                            <constraint firstItem="e9m-fe-dhj" firstAttribute="leading" secondItem="6B1-k9-19r" secondAttribute="trailing" constant="8" symbolic="YES" id="dAp-ul-hqb"/>
+                            <constraint firstItem="b3l-W4-ZmA" firstAttribute="height" secondItem="vkw-ba-k5E" secondAttribute="height" id="dKw-Ay-vGj"/>
+                            <constraint firstItem="8vz-a7-eSa" firstAttribute="centerY" secondItem="bZC-sU-Umj" secondAttribute="centerY" id="dRz-KH-7hj"/>
+                            <constraint firstItem="JPU-yv-M4H" firstAttribute="height" secondItem="xeG-tu-PV0" secondAttribute="height" id="dYf-5j-dmB"/>
+                            <constraint firstItem="b3l-W4-ZmA" firstAttribute="centerY" secondItem="vkw-ba-k5E" secondAttribute="centerY" id="enn-OL-u07"/>
+                            <constraint firstItem="hO5-KD-vLq" firstAttribute="height" secondItem="xuc-Wz-246" secondAttribute="height" id="f76-Nd-1G4"/>
+                            <constraint firstItem="1uJ-Iy-LWv" firstAttribute="leading" secondItem="JPU-yv-M4H" secondAttribute="trailing" constant="8" symbolic="YES" id="fIf-4V-ySI"/>
+                            <constraint firstItem="bFB-T1-WqT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="fS1-XY-fIW"/>
+                            <constraint firstItem="0y6-Od-fs9" firstAttribute="top" secondItem="bFB-T1-WqT" secondAttribute="bottom" id="g4R-hI-JpQ"/>
+                            <constraint firstItem="fJw-uc-swJ" firstAttribute="width" secondItem="0y6-Od-fs9" secondAttribute="width" id="ghd-Ud-5dF"/>
+                            <constraint firstItem="vkw-ba-k5E" firstAttribute="width" secondItem="bFB-T1-WqT" secondAttribute="width" id="hLK-na-Uaa"/>
+                            <constraint firstItem="fJw-uc-swJ" firstAttribute="height" secondItem="0y6-Od-fs9" secondAttribute="height" id="hcZ-7b-ral"/>
+                            <constraint firstItem="GZJ-6z-1ob" firstAttribute="width" secondItem="e9m-fe-dhj" secondAttribute="width" id="hdw-RE-dvW"/>
+                            <constraint firstItem="vkw-ba-k5E" firstAttribute="centerY" secondItem="bFB-T1-WqT" secondAttribute="centerY" id="hgw-nP-z8D"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="bFB-T1-WqT" secondAttribute="leading" id="hzA-v5-AZh"/>
+                            <constraint firstItem="Lyh-cc-Tg9" firstAttribute="width" secondItem="bZC-sU-Umj" secondAttribute="width" id="iDF-ef-Lbf"/>
+                            <constraint firstItem="0y6-Od-fs9" firstAttribute="width" secondItem="bFB-T1-WqT" secondAttribute="width" id="k27-am-kge"/>
+                            <constraint firstItem="6B1-k9-19r" firstAttribute="leading" secondItem="Lyh-cc-Tg9" secondAttribute="trailing" constant="8" symbolic="YES" id="k4a-JZ-j5f"/>
+                            <constraint firstItem="JPU-yv-M4H" firstAttribute="width" secondItem="xeG-tu-PV0" secondAttribute="width" id="kCL-Q0-8dI"/>
+                            <constraint firstItem="xuc-Wz-246" firstAttribute="width" secondItem="fJw-uc-swJ" secondAttribute="width" id="l0l-VT-Um7"/>
+                            <constraint firstItem="0g5-jK-eQF" firstAttribute="centerY" secondItem="1uJ-Iy-LWv" secondAttribute="centerY" id="mhf-fd-pmT"/>
+                            <constraint firstItem="0y6-Od-fs9" firstAttribute="height" secondItem="bFB-T1-WqT" secondAttribute="height" id="n15-02-UPt"/>
+                            <constraint firstItem="b3l-W4-ZmA" firstAttribute="width" secondItem="vkw-ba-k5E" secondAttribute="width" id="n4C-md-M0F"/>
+                            <constraint firstItem="0y6-Od-fs9" firstAttribute="width" secondItem="0y6-Od-fs9" secondAttribute="height" multiplier="2:3" id="neB-bu-YyL"/>
+                            <constraint firstItem="fJw-uc-swJ" firstAttribute="centerY" secondItem="0y6-Od-fs9" secondAttribute="centerY" id="odf-MP-GkA"/>
+                            <constraint firstItem="xuc-Wz-246" firstAttribute="centerY" secondItem="fJw-uc-swJ" secondAttribute="centerY" id="q6L-9c-CGE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="22A-Bg-eVA" secondAttribute="trailing" id="qfM-XM-cbs"/>
+                            <constraint firstItem="Lyh-cc-Tg9" firstAttribute="centerY" secondItem="8vz-a7-eSa" secondAttribute="centerY" id="qsu-He-Qz9"/>
+                            <constraint firstItem="GZJ-6z-1ob" firstAttribute="centerY" secondItem="e9m-fe-dhj" secondAttribute="centerY" id="rcO-YW-Gj2"/>
+                            <constraint firstItem="xeG-tu-PV0" firstAttribute="centerY" secondItem="eZ8-m9-cu3" secondAttribute="centerY" id="s5C-mn-mtf"/>
+                            <constraint firstItem="xuc-Wz-246" firstAttribute="height" secondItem="fJw-uc-swJ" secondAttribute="height" id="sCh-nN-xlC"/>
+                            <constraint firstItem="Lyh-cc-Tg9" firstAttribute="height" secondItem="8vz-a7-eSa" secondAttribute="height" id="uND-3m-pRo"/>
+                            <constraint firstItem="bZC-sU-Umj" firstAttribute="width" secondItem="b3l-W4-ZmA" secondAttribute="width" id="vAv-Jc-UHj"/>
+                            <constraint firstItem="6B1-k9-19r" firstAttribute="height" secondItem="Lyh-cc-Tg9" secondAttribute="height" id="ve3-rQ-HVQ"/>
+                            <constraint firstItem="xeG-tu-PV0" firstAttribute="leading" secondItem="eZ8-m9-cu3" secondAttribute="trailing" constant="8" symbolic="YES" id="veC-I3-k5A"/>
+                            <constraint firstItem="0g5-jK-eQF" firstAttribute="height" secondItem="1uJ-Iy-LWv" secondAttribute="height" id="wNe-ni-o7D"/>
+                            <constraint firstItem="e9m-fe-dhj" firstAttribute="height" secondItem="6B1-k9-19r" secondAttribute="height" id="xKq-8f-hm7"/>
+                            <constraint firstItem="xeG-tu-PV0" firstAttribute="width" secondItem="hO5-KD-vLq" secondAttribute="width" id="y6U-os-Abq"/>
+                            <constraint firstItem="GZJ-6z-1ob" firstAttribute="leading" secondItem="e9m-fe-dhj" secondAttribute="trailing" constant="8" symbolic="YES" id="zbW-3w-Ime"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="neB-bu-YyL"/>
+                                <exclude reference="NTM-wW-fYB"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Moves: 0 Time: 00:00" id="AWq-Gq-6Zp">
+                        <barButtonItem key="leftBarButtonItem" title="New Game" id="uQ5-J9-oLZ">
+                            <connections>
+                                <action selector="newGameButtonPressed:" destination="BYZ-38-t0r" id="hlO-sy-0yN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="⚙" id="QsI-xe-w6J"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="adBannerView" destination="QZC-oB-MsR" id="ldb-Vb-y60"/>
+                        <outlet property="cardStacksOnHoldPlaceHolder" destination="22A-Bg-eVA" id="8WY-qj-zeV"/>
+                        <outlet property="newGameButton" destination="uQ5-J9-oLZ" id="AXd-s5-zGu"/>
+                        <outletCollection property="cardStacksDealedPlaceHolders" destination="0y6-Od-fs9" collectionClass="NSMutableArray" id="Hdf-JS-znL"/>
+                        <outletCollection property="cardStacksDealedPlaceHolders" destination="fJw-uc-swJ" collectionClass="NSMutableArray" id="sCQ-n2-QeC"/>
+                        <outletCollection property="cardStacksDealedPlaceHolders" destination="xuc-Wz-246" collectionClass="NSMutableArray" id="2Aw-yx-wop"/>
+                        <outletCollection property="cardStacksDealedPlaceHolders" destination="hO5-KD-vLq" collectionClass="NSMutableArray" id="58c-My-VCX"/>
+                        <outletCollection property="cardStacksDealedPlaceHolders" destination="xeG-tu-PV0" collectionClass="NSMutableArray" id="LLQ-JH-YBo"/>
+                        <outletCollection property="cardStacksDealedPlaceHolders" destination="JPU-yv-M4H" collectionClass="NSMutableArray" id="sl9-Bn-lI6"/>
+                        <outletCollection property="cardStacksDealedPlaceHolders" destination="1uJ-Iy-LWv" collectionClass="NSMutableArray" id="hgO-gA-QSe"/>
+                        <outletCollection property="cardStacksDealedPlaceHolders" destination="0g5-jK-eQF" collectionClass="NSMutableArray" id="xf8-N3-bfw"/>
+                        <outletCollection property="cardFreeSpacePlaceHolders" destination="bFB-T1-WqT" collectionClass="NSMutableArray" id="SSa-yF-bLp"/>
+                        <outletCollection property="cardFreeSpacePlaceHolders" destination="vkw-ba-k5E" collectionClass="NSMutableArray" id="8YV-pw-UI8"/>
+                        <outletCollection property="cardFreeSpacePlaceHolders" destination="b3l-W4-ZmA" collectionClass="NSMutableArray" id="txE-iG-H5p"/>
+                        <outletCollection property="cardFreeSpacePlaceHolders" destination="bZC-sU-Umj" collectionClass="NSMutableArray" id="Xuh-L4-NG0"/>
+                        <outletCollection property="cardStackCompletedPlaceHolders" destination="Lyh-cc-Tg9" collectionClass="NSMutableArray" id="lfd-cy-uqP"/>
+                        <outletCollection property="cardStackCompletedPlaceHolders" destination="6B1-k9-19r" collectionClass="NSMutableArray" id="HHw-zl-DUH"/>
+                        <outletCollection property="cardStackCompletedPlaceHolders" destination="e9m-fe-dhj" collectionClass="NSMutableArray" id="aUU-cS-qNP"/>
+                        <outletCollection property="cardStackCompletedPlaceHolders" destination="GZJ-6z-1ob" collectionClass="NSMutableArray" id="eZE-40-Aiq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="270" y="234"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zZt-px-Jz7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dxd-up-Sl4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="co1-UD-Jrm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xqF-z6-sqK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="76V-lK-COZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-436" y="234"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  FreeCell
+
+  Created by Yanbing Peng on 4/06/16.
+  Copyright © 2016 Yanbing Peng. All rights reserved.
+*/
+
+"AlertNewGameTitle" = "新游戏";
+"AlertNewGameMessage" = "重新开始?";
+"AlertNewGameRestartButton" = "重来";
+"AlertNewGameCancelButton" = "取消";
+
+"PageTitleMove" = "移动";
+"PageTitleTime" = "时间";
+
+"AlertWinTitle" = "恭喜";
+"AlertWinMessage" = "你赢了!";
+"AlertWinCancelButton" = "好的";
+
+"AlertWarningTitle" = "提示";
+"AlertWarningMessage1" = "你没有足够的空格来支持你挪动这么多牌";
+"AlertWarningMessage2" = "牌在8个竖排之间挪动时，被挪动的牌的颜色必须是红黑相间的";
+"AlertWarningCancelButton" = "好的";
+
+"AlertTutorialTitle" = "玩法介绍";
+"AlertTutorialMessage1" = "目标是把牌在右上角按同种花色A到K的顺序排好。";
+"AlertTutorialMessage2" = "牌在8个竖排之间可以按倒序排列，而且必须是红黑相间的。例如，你可以把黑色的Q挪到红色的K上。";
+"AlertTutorialMessage3" = "在左上角有四个空格位置，你可以用来暂时放置任何单张的牌。";
+"AlertTutorialMessage4" = "一旦牌被放置到右上角就不可以被挪回。";
+"AlertTutorialMessage5" = "在8竖排挪多张牌时，最多可以挪动的张数等于左上的空格数加一。";
+"AlertTutorialMessage6" = "当8个竖排中清理出空位时，你可挪任何一些牌上去，只要左上角有足够空格数量允许你的挪动。";
+
+"AlertTutorialCloseButton" = "关闭";
+"AlertTutorialBackButton" = "上一条";
+"AlertTutorialNextButton" = "下一条";
+"AlertTutorialNotShowAgainButton" = "不再显示";

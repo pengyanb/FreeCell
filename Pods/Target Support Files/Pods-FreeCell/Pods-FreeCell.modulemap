@@ -1,0 +1,6 @@
+framework module Pods_FreeCell {
+  umbrella header "Pods-FreeCell-umbrella.h"
+
+  export *
+  module * { export * }
+}

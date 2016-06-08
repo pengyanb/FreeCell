@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BF9245CE7EA40220B0FD3DD /* Pods_FreeCellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F11ADCC28E5BCF017BB67BE /* Pods_FreeCellTests.framework */; };
+		641C48F6C1ABF02AE4CB0D11 /* Pods_FreeCellUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67BB5F51C4BF7A5EE401619 /* Pods_FreeCellUITests.framework */; };
+		B84D39141D02D46A00FBE56F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B84D39161D02D46A00FBE56F /* Localizable.strings */; };
+		B84D39191D02F50000FBE56F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B84D39181D02F50000FBE56F /* InfoPlist.strings */; };
 		B8B04E6B1CF6EDE000D0F4C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B04E6A1CF6EDE000D0F4C0 /* AppDelegate.swift */; };
-		B8B04E6D1CF6EDE000D0F4C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B04E6C1CF6EDE000D0F4C0 /* ViewController.swift */; };
+		B8B04E6D1CF6EDE000D0F4C0 /* FreeCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B04E6C1CF6EDE000D0F4C0 /* FreeCellViewController.swift */; };
 		B8B04E701CF6EDE000D0F4C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8B04E6E1CF6EDE000D0F4C0 /* Main.storyboard */; };
 		B8B04E721CF6EDE000D0F4C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B04E711CF6EDE000D0F4C0 /* Assets.xcassets */; };
 		B8B04E751CF6EDE000D0F4C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8B04E731CF6EDE000D0F4C0 /* LaunchScreen.storyboard */; };
 		B8B04E801CF6EDE000D0F4C0 /* FreeCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B04E7F1CF6EDE000D0F4C0 /* FreeCellTests.swift */; };
 		B8B04E8B1CF6EDE000D0F4C0 /* FreeCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B04E8A1CF6EDE000D0F4C0 /* FreeCellUITests.swift */; };
+		B8B04E9E1CF6F23000D0F4C0 /* PokerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B04E9D1CF6F23000D0F4C0 /* PokerView.xib */; };
+		B8B04EA01CF6F29E00D0F4C0 /* PokerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B04E9F1CF6F29E00D0F4C0 /* PokerView.swift */; };
+		B8E0348C1CF83984000F007C /* FreeCellGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E0348B1CF83984000F007C /* FreeCellGameModel.swift */; };
+		B8E0348E1CF845F7000F007C /* PokerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E0348D1CF845F7000F007C /* PokerCard.swift */; };
+		B8E034901CF84619000F007C /* EnumAndConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E0348F1CF84619000F007C /* EnumAndConstants.swift */; };
+		B8E034921CF84649000F007C /* PokerViewMoveDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E034911CF84649000F007C /* PokerViewMoveDelegate.swift */; };
+		F531ACF348C925E3ADCAFC86 /* Pods_FreeCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBF52324847E0428AEFC685 /* Pods_FreeCell.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +45,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C7FE09728A8F4538293933 /* Pods-FreeCellUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeCellUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeCellUITests/Pods-FreeCellUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0BBCB5F9AA380EB53440BFBA /* Pods-FreeCellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeCellTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeCellTests/Pods-FreeCellTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F11ADCC28E5BCF017BB67BE /* Pods_FreeCellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeCellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BBF52324847E0428AEFC685 /* Pods_FreeCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		816DD4F917005EBABE7D34FC /* Pods-FreeCell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeCell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeCell/Pods-FreeCell.debug.xcconfig"; sourceTree = "<group>"; };
+		87B5D10137CB8B4301C3C42B /* Pods-FreeCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeCell.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeCell/Pods-FreeCell.release.xcconfig"; sourceTree = "<group>"; };
+		95AA3A5E041AF45D308BB5E6 /* Pods-FreeCellUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeCellUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeCellUITests/Pods-FreeCellUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A67BB5F51C4BF7A5EE401619 /* Pods_FreeCellUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeCellUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B84D39101D02D3B900FBE56F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		B84D39111D02D3B900FBE56F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B84D39151D02D46A00FBE56F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B84D39171D02D4AB00FBE56F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B84D39181D02F50000FBE56F /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		B8B04E671CF6EDE000D0F4C0 /* FreeCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B04E6A1CF6EDE000D0F4C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8B04E6C1CF6EDE000D0F4C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8B04E6C1CF6EDE000D0F4C0 /* FreeCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeCellViewController.swift; sourceTree = "<group>"; };
 		B8B04E6F1CF6EDE000D0F4C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8B04E711CF6EDE000D0F4C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8B04E741CF6EDE000D0F4C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +71,13 @@
 		B8B04E861CF6EDE000D0F4C0 /* FreeCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B04E8A1CF6EDE000D0F4C0 /* FreeCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeCellUITests.swift; sourceTree = "<group>"; };
 		B8B04E8C1CF6EDE000D0F4C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8B04E9D1CF6F23000D0F4C0 /* PokerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PokerView.xib; sourceTree = "<group>"; };
+		B8B04E9F1CF6F29E00D0F4C0 /* PokerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerView.swift; sourceTree = "<group>"; };
+		B8E0348B1CF83984000F007C /* FreeCellGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeCellGameModel.swift; sourceTree = "<group>"; };
+		B8E0348D1CF845F7000F007C /* PokerCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerCard.swift; sourceTree = "<group>"; };
+		B8E0348F1CF84619000F007C /* EnumAndConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumAndConstants.swift; sourceTree = "<group>"; };
+		B8E034911CF84649000F007C /* PokerViewMoveDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerViewMoveDelegate.swift; sourceTree = "<group>"; };
+		C2987CE3787C7CA4A79497D0 /* Pods-FreeCellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeCellTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeCellTests/Pods-FreeCellTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F531ACF348C925E3ADCAFC86 /* Pods_FreeCell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF9245CE7EA40220B0FD3DD /* Pods_FreeCellTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +101,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641C48F6C1ABF02AE4CB0D11 /* Pods_FreeCellUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		381B24A1D7C396E51714DF46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BBF52324847E0428AEFC685 /* Pods_FreeCell.framework */,
+				1F11ADCC28E5BCF017BB67BE /* Pods_FreeCellTests.framework */,
+				A67BB5F51C4BF7A5EE401619 /* Pods_FreeCellUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		709BF8E253A9BA172762E025 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				816DD4F917005EBABE7D34FC /* Pods-FreeCell.debug.xcconfig */,
+				87B5D10137CB8B4301C3C42B /* Pods-FreeCell.release.xcconfig */,
+				0BBCB5F9AA380EB53440BFBA /* Pods-FreeCellTests.debug.xcconfig */,
+				C2987CE3787C7CA4A79497D0 /* Pods-FreeCellTests.release.xcconfig */,
+				95AA3A5E041AF45D308BB5E6 /* Pods-FreeCellUITests.debug.xcconfig */,
+				00C7FE09728A8F4538293933 /* Pods-FreeCellUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B8B04E5E1CF6EDE000D0F4C0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +138,8 @@
 				B8B04E7E1CF6EDE000D0F4C0 /* FreeCellTests */,
 				B8B04E891CF6EDE000D0F4C0 /* FreeCellUITests */,
 				B8B04E681CF6EDE000D0F4C0 /* Products */,
+				709BF8E253A9BA172762E025 /* Pods */,
+				381B24A1D7C396E51714DF46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +156,11 @@
 		B8B04E691CF6EDE000D0F4C0 /* FreeCell */ = {
 			isa = PBXGroup;
 			children = (
-				B8B04E6A1CF6EDE000D0F4C0 /* AppDelegate.swift */,
-				B8B04E6C1CF6EDE000D0F4C0 /* ViewController.swift */,
-				B8B04E6E1CF6EDE000D0F4C0 /* Main.storyboard */,
-				B8B04E711CF6EDE000D0F4C0 /* Assets.xcassets */,
-				B8B04E731CF6EDE000D0F4C0 /* LaunchScreen.storyboard */,
-				B8B04E761CF6EDE000D0F4C0 /* Info.plist */,
+				B8B04E9C1CF6EE3800D0F4C0 /* Class */,
+				B8B04E9B1CF6EE3200D0F4C0 /* Model */,
+				B8B04E9A1CF6EE2B00D0F4C0 /* View */,
+				B8B04E991CF6EE2100D0F4C0 /* Controller */,
+				B8B04E981CF6EE0000D0F4C0 /* Supporting Files */,
 			);
 			path = FreeCell;
 			sourceTree = "<group>";
@@ -125,6 +183,55 @@
 			path = FreeCellUITests;
 			sourceTree = "<group>";
 		};
+		B8B04E981CF6EE0000D0F4C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8B04E6A1CF6EDE000D0F4C0 /* AppDelegate.swift */,
+				B8B04E711CF6EDE000D0F4C0 /* Assets.xcassets */,
+				B8B04E731CF6EDE000D0F4C0 /* LaunchScreen.storyboard */,
+				B8B04E761CF6EDE000D0F4C0 /* Info.plist */,
+				B84D39161D02D46A00FBE56F /* Localizable.strings */,
+				B84D39181D02F50000FBE56F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8B04E991CF6EE2100D0F4C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8B04E6C1CF6EDE000D0F4C0 /* FreeCellViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B8B04E9A1CF6EE2B00D0F4C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B8B04E6E1CF6EDE000D0F4C0 /* Main.storyboard */,
+				B8B04E9F1CF6F29E00D0F4C0 /* PokerView.swift */,
+				B8B04E9D1CF6F23000D0F4C0 /* PokerView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B8B04E9B1CF6EE3200D0F4C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8E0348B1CF83984000F007C /* FreeCellGameModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B8B04E9C1CF6EE3800D0F4C0 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				B8E0348D1CF845F7000F007C /* PokerCard.swift */,
+				B8E0348F1CF84619000F007C /* EnumAndConstants.swift */,
+				B8E034911CF84649000F007C /* PokerViewMoveDelegate.swift */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8B04E8F1CF6EDE000D0F4C0 /* Build configuration list for PBXNativeTarget "FreeCell" */;
 			buildPhases = (
+				B62B306F19890DCF4FBED954 /* 📦 Check Pods Manifest.lock */,
 				B8B04E631CF6EDE000D0F4C0 /* Sources */,
 				B8B04E641CF6EDE000D0F4C0 /* Frameworks */,
 				B8B04E651CF6EDE000D0F4C0 /* Resources */,
+				40EA6B408FCDD2EBF6EC3650 /* 📦 Embed Pods Frameworks */,
+				3FEEB8E5F07013262764ED69 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +259,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8B04E921CF6EDE000D0F4C0 /* Build configuration list for PBXNativeTarget "FreeCellTests" */;
 			buildPhases = (
+				0092AFD5B3D23CA70C31E979 /* 📦 Check Pods Manifest.lock */,
 				B8B04E771CF6EDE000D0F4C0 /* Sources */,
 				B8B04E781CF6EDE000D0F4C0 /* Frameworks */,
 				B8B04E791CF6EDE000D0F4C0 /* Resources */,
+				80D7724758840E68DD8A8FAD /* 📦 Embed Pods Frameworks */,
+				317D6A75F58A2332528B741C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +280,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8B04E951CF6EDE000D0F4C0 /* Build configuration list for PBXNativeTarget "FreeCellUITests" */;
 			buildPhases = (
+				96D341D356F8DF066CDD4746 /* 📦 Check Pods Manifest.lock */,
 				B8B04E821CF6EDE000D0F4C0 /* Sources */,
 				B8B04E831CF6EDE000D0F4C0 /* Frameworks */,
 				B8B04E841CF6EDE000D0F4C0 /* Resources */,
+				8DA39F3010CE3E977567DCAA /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +308,7 @@
 				TargetAttributes = {
 					B8B04E661CF6EDE000D0F4C0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = FX3X9EUZ62;
 					};
 					B8B04E7A1CF6EDE000D0F4C0 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -211,6 +327,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = B8B04E5E1CF6EDE000D0F4C0;
 			productRefGroup = B8B04E681CF6EDE000D0F4C0 /* Products */;
@@ -229,8 +346,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B84D39141D02D46A00FBE56F /* Localizable.strings in Resources */,
+				B84D39191D02F50000FBE56F /* InfoPlist.strings in Resources */,
 				B8B04E751CF6EDE000D0F4C0 /* LaunchScreen.storyboard in Resources */,
 				B8B04E721CF6EDE000D0F4C0 /* Assets.xcassets in Resources */,
+				B8B04E9E1CF6F23000D0F4C0 /* PokerView.xib in Resources */,
 				B8B04E701CF6EDE000D0F4C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,13 +371,141 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0092AFD5B3D23CA70C31E979 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		317D6A75F58A2332528B741C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeCellTests/Pods-FreeCellTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FEEB8E5F07013262764ED69 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeCell/Pods-FreeCell-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40EA6B408FCDD2EBF6EC3650 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeCell/Pods-FreeCell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80D7724758840E68DD8A8FAD /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeCellTests/Pods-FreeCellTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DA39F3010CE3E977567DCAA /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeCellUITests/Pods-FreeCellUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96D341D356F8DF066CDD4746 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B62B306F19890DCF4FBED954 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B8B04E631CF6EDE000D0F4C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8B04E6D1CF6EDE000D0F4C0 /* ViewController.swift in Sources */,
+				B8E034901CF84619000F007C /* EnumAndConstants.swift in Sources */,
+				B8B04E6D1CF6EDE000D0F4C0 /* FreeCellViewController.swift in Sources */,
+				B8E034921CF84649000F007C /* PokerViewMoveDelegate.swift in Sources */,
 				B8B04E6B1CF6EDE000D0F4C0 /* AppDelegate.swift in Sources */,
+				B8B04EA01CF6F29E00D0F4C0 /* PokerView.swift in Sources */,
+				B8E0348C1CF83984000F007C /* FreeCellGameModel.swift in Sources */,
+				B8E0348E1CF845F7000F007C /* PokerCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +541,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B84D39161D02D46A00FBE56F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B84D39151D02D46A00FBE56F /* Base */,
+				B84D39171D02D4AB00FBE56F /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		B8B04E6E1CF6EDE000D0F4C0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B8B04E6F1CF6EDE000D0F4C0 /* Base */,
+				B84D39101D02D3B900FBE56F /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -305,6 +563,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B8B04E741CF6EDE000D0F4C0 /* Base */,
+				B84D39111D02D3B900FBE56F /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -399,9 +658,12 @@
 		};
 		B8B04E901CF6EDE000D0F4C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 816DD4F917005EBABE7D34FC /* Pods-FreeCell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FreeCell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pengyanb.FreeCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,9 +672,12 @@
 		};
 		B8B04E911CF6EDE000D0F4C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87B5D10137CB8B4301C3C42B /* Pods-FreeCell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FreeCell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pengyanb.FreeCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -421,6 +686,7 @@
 		};
 		B8B04E931CF6EDE000D0F4C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BBCB5F9AA380EB53440BFBA /* Pods-FreeCellTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FreeCellTests/Info.plist;
@@ -433,6 +699,7 @@
 		};
 		B8B04E941CF6EDE000D0F4C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2987CE3787C7CA4A79497D0 /* Pods-FreeCellTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FreeCellTests/Info.plist;
@@ -445,6 +712,7 @@
 		};
 		B8B04E961CF6EDE000D0F4C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95AA3A5E041AF45D308BB5E6 /* Pods-FreeCellUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FreeCellUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,6 +724,7 @@
 		};
 		B8B04E971CF6EDE000D0F4C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C7FE09728A8F4538293933 /* Pods-FreeCellUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FreeCellUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -484,6 +753,7 @@
 				B8B04E911CF6EDE000D0F4C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8B04E921CF6EDE000D0F4C0 /* Build configuration list for PBXNativeTarget "FreeCellTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +762,7 @@
 				B8B04E941CF6EDE000D0F4C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8B04E951CF6EDE000D0F4C0 /* Build configuration list for PBXNativeTarget "FreeCellUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +771,7 @@
 				B8B04E971CF6EDE000D0F4C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

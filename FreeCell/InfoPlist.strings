@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  FreeCell
+
+  Created by Yanbing Peng on 4/06/16.
+  Copyright © 2016 Yanbing Peng. All rights reserved.
+*/
+
+
+"CFBundleDisplayName" = "空格接龙";
