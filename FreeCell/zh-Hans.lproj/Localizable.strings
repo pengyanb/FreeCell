@@ -35,3 +35,7 @@
 "AlertTutorialBackButton" = "上一条";
 "AlertTutorialNextButton" = "下一条";
 "AlertTutorialNotShowAgainButton" = "不再显示";
+
+"TopScoreTableViewControllerBackButton" = "返回";
+"TopScoreTableViewControlerTitle" = "成绩排序";
+"TopScoreTableViewControllerGameCenterRankButton" = "游戏中心排名";ß

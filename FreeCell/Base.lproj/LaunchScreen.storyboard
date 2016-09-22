@@ -3,6 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +19,37 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Peng" translatesAutoresizingMaskIntoConstraints="NO" id="gmc-1I-tS5">
+                                <rect key="frame" x="150" y="225" width="300" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gmc-1I-tS5" secondAttribute="height" multiplier="2:1" id="Xh2-VI-zxH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2016. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fc-AB-Igr">
+                                <rect key="frame" x="20" y="571" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gmc-1I-tS5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="25J-GX-QLZ"/>
+                            <constraint firstItem="gmc-1I-tS5" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="1:2" id="BBQ-nC-n5k"/>
+                            <constraint firstItem="gmc-1I-tS5" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="1:2" id="IXi-WE-Bge"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5fc-AB-Igr" secondAttribute="trailing" id="LQ1-Kf-9ZV"/>
+                            <constraint firstItem="5fc-AB-Igr" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="Rgx-wR-6OH"/>
+                            <constraint firstItem="gmc-1I-tS5" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="2:1" id="gHC-JP-xqP"/>
+                            <constraint firstItem="gmc-1I-tS5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lRy-vd-LVB"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="5fc-AB-Igr" secondAttribute="bottom" constant="8" symbolic="YES" id="mi2-T5-7Ij"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IXi-WE-Bge"/>
+                                <exclude reference="gHC-JP-xqP"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +57,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Peng" width="500" height="250"/>
+    </resources>
 </document>

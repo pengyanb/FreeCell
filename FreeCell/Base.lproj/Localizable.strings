@@ -26,7 +26,7 @@
 
 "AlertTutorialTitle" = "How to play";
 "AlertTutorialMessage1" = "The goal is to complete four stacks of same suit cards from A to K in the upper-right corner.";
-"AlertTutorialMessage2" = "Cards in the eight columns can be moved on to each other in desceding order and must alternate between red and black. For example, you can put a black Q on a red K.";
+"AlertTutorialMessage2" = "Cards in the eight columns can be moved on to each other in descending order and must alternate between red and black. For example, you can put a black Q on a red K.";
 "AlertTutorialMessage3" = "In the upper-left corner are four free cells, where you can temporarily store any single card during play.";
 "AlertTutorialMessage4" = "Once you complete a card on top-right corner, you can't move it back.";
 "AlertTutorialMessage5" = "When moving a stack of sequential cards between the eight columns, the maximum number of moveable cards equal to the number of free cells available plus one.";
@@ -36,3 +36,7 @@
 "AlertTutorialBackButton" = "Back";
 "AlertTutorialNextButton" = "Next";
 "AlertTutorialNotShowAgainButton" = "Do not show again";
+
+"TopScoreTableViewControllerBackButton" = "Back";
+"TopScoreTableViewControlerTitle" = "Top Scores";
+"TopScoreTableViewControllerGameCenterRankButton" = "Game Center Rank";

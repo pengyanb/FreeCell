@@ -11,19 +11,19 @@ import UIKit
 
 protocol PokerViewMoveDelegate {
 
-    func handlePokerViewMoveBegan(atIndexPath indexPath:NSIndexPath) -> Void
+    func handlePokerViewMoveBegan(atIndexPath indexPath:IndexPath) -> Void
     
-    func handlePokerViewMoveChanged(atIndexPath indexPath:NSIndexPath, translation:CGPoint) -> Void
+    func handlePokerViewMoveChanged(atIndexPath indexPath:IndexPath, translation:CGPoint) -> Void
     
-    func handlePokerViewMoveEnd(atIndexPath indexPath:NSIndexPath) -> Void
+    func handlePokerViewMoveEnd(atIndexPath indexPath:IndexPath) -> Void
     
-    func handlePokerViewMoveCancelled(atIndexPath indexPath:NSIndexPath) -> Void
+    func handlePokerViewMoveCancelled(atIndexPath indexPath:IndexPath) -> Void
     
-    func handlePokerViewMoveFailed(atIndexPath indexPath:NSIndexPath) -> Void
+    func handlePokerViewMoveFailed(atIndexPath indexPath:IndexPath) -> Void
     
     //func handlePokerStackTap()->Void
     
-    func handlePokerCardTap(atIndexPath indexPath: NSIndexPath)->Void
+    func handlePokerCardTap(atIndexPath indexPath: IndexPath)->Void
     
-    func handleUnmoveableViewPanGesture(atIndexPath indexPath: NSIndexPath, panGesture: UIPanGestureRecognizer)->Void
+    func handleUnmoveableViewPanGesture(atIndexPath indexPath: IndexPath, panGesture: UIPanGestureRecognizer)->Void
 }

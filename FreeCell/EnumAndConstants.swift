@@ -10,49 +10,49 @@ import Foundation
 import UIKit
 
 enum CardSuit {
-    case SPADE
-    case CLUB
-    case HEART
-    case DIAMOND
+    case spade
+    case club
+    case heart
+    case diamond
     
     func name()->String{
         switch self {
-        case .SPADE:
+        case .spade:
             return "Spade"
-        case .CLUB:
+        case .club:
             return "Club"
-        case .HEART:
+        case .heart:
             return "Heart"
-        case .DIAMOND:
+        case .diamond:
             return "Diamond"
         }
     }
     
-    func sameColorWith(cardSuit:CardSuit)->Bool{
+    func sameColorWith(_ cardSuit:CardSuit)->Bool{
         switch self {
-        case .SPADE:
-            if cardSuit == CardSuit.SPADE || cardSuit == CardSuit.CLUB{
+        case .spade:
+            if cardSuit == CardSuit.spade || cardSuit == CardSuit.club{
                 return true
             }
             else{
                 return false
             }
-        case .CLUB:
-            if cardSuit == CardSuit.SPADE || cardSuit == CardSuit.CLUB{
+        case .club:
+            if cardSuit == CardSuit.spade || cardSuit == CardSuit.club{
                 return true
             }
             else{
                 return false
             }
-        case .HEART:
-            if cardSuit == CardSuit.SPADE || cardSuit == CardSuit.CLUB{
+        case .heart:
+            if cardSuit == CardSuit.spade || cardSuit == CardSuit.club{
                 return false
             }
             else{
                 return true
             }
-        case .DIAMOND:
-            if cardSuit == CardSuit.SPADE || cardSuit == CardSuit.CLUB{
+        case .diamond:
+            if cardSuit == CardSuit.spade || cardSuit == CardSuit.club{
                 return false
             }
             else{
@@ -64,8 +64,8 @@ enum CardSuit {
 
 class CardAutoCompletionInfo{
     let card : PokerCard
-    let indexPath : NSIndexPath
-    init(_card: PokerCard, _indexPath:NSIndexPath){
+    let indexPath : IndexPath
+    init(_card: PokerCard, _indexPath:IndexPath){
         card = _card
         indexPath = _indexPath
     }
@@ -77,9 +77,13 @@ class CONSTANTS {
     
     static let CONST_POKER_VIEW_Z_POSITION_BASE_VALUE : CGFloat = 99
     
+    static let NSUSER_DEFAULTS_NOT_AUTO_COMPLETE_KEY = "PYBFreeCellUserDefaultsNotAutoCompleteKey"
     static let NSUSER_DEFAULTS_NOT_SHOW_TUTORIAL_KEY = "PYBFreeCellUserDefaultsNotShowTutorialKey"
     static let NSUSER_DEFAULTS_SHOW_HINTS_KEY = "PYBFreeCellUserDefaultsShowHintsKey"
     static let NSUSER_DEFAULTS_NO_SOUND_EFFECTS_KEY = "PYBFreeCellUserDefaultsNoSoundEffectsKey"
     
     static let NSUSER_DEFAULTS_TIME_ELLAPSED_KEY = "PYBFreeCellUserDefaultsTimeEllapsedKey"
+    static let NSUSER_DEFAULTS_TOP_TEN_SCORE_KEY = "PYBFeeCellUserDefaultsTopTenScoreKey"
+    static let NSUSER_DEFAULTS_OVERALL_TIME_KEY = "PYBFreeCellUserDefaultsOverallTimeKey"
+    static let NSUSER_DEFAULTS_OVERALL_ROUND_COMPLETED_KEY = "PYNFreeCellUserDefaultsOverallRoundCompletedKey"
 }

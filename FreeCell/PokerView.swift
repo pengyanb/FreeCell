@@ -86,7 +86,7 @@ import UIKit
                         pokerImageView.image = image
                     }
                     else{
-                        UIView.transitionWithView(pokerImageView, duration: 0.1, options: [UIViewAnimationOptions.TransitionFlipFromLeft, UIViewAnimationOptions.CurveEaseInOut], animations: { [weak self] in
+                        UIView.transition(with: pokerImageView, duration: 0.1, options: UIViewAnimationOptions.transitionFlipFromLeft, animations: { [weak self] in
                                 self?.pokerImageView.image = image
                             }, completion: nil)
                     }
@@ -97,7 +97,7 @@ import UIKit
     
     var pokerIsMoveable = false
     
-    var pokerViewIndexPath : NSIndexPath?   //indexPath in dealed card stacks
+    var pokerViewIndexPath : IndexPath?   //indexPath in dealed card stacks
     
     var pokerFreeSpaceIndex : Int?          //index in the free space
     
@@ -153,13 +153,13 @@ import UIKit
         xibSetup()
     }
     
-    private func xibSetup(){
-        let nib = UINib(nibName: "PokerView", bundle: NSBundle(forClass: self.dynamicType))
-        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+    fileprivate func xibSetup(){
+        let nib = UINib(nibName: "PokerView", bundle: Bundle(for: type(of: self)))
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         //let objArray = NSBundle.mainBundle().loadNibNamed("PokerView", owner: self, options: nil)
         //let view = objArray[0] as! UIView
         view.frame = bounds
-        view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+        view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
         
         let panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognized(_:)))
         self.gestureRecognizers = [panRecognizer]
@@ -179,7 +179,7 @@ import UIKit
     }
     func resetToOriginal(){
         if let position = viewOriginalPosition{
-            UIView.animateWithDuration(0.1, animations: { 
+            UIView.animate(withDuration: 0.1, animations: { 
                 [weak self] in
                     self?.center = position
                 }, completion: {[weak self] (completed) in
@@ -206,9 +206,9 @@ import UIKit
             self.layer.zPosition = CONSTANTS.CONST_POKER_VIEW_Z_POSITION_BASE_VALUE * 10 + self.layer.zPosition
         }
     }
-    func handleViewMoveChanged(translation:CGPoint){
+    func handleViewMoveChanged(_ translation:CGPoint){
         if pokerIsMoveable{
-            self.center = CGPointMake(self.center.x + translation.x, self.center.y + translation.y)
+            self.center = CGPoint(x: self.center.x + translation.x, y: self.center.y + translation.y)
         }
     }
     func handleViewMoveCancelled(){
@@ -223,7 +223,7 @@ import UIKit
     }
     
     // MARK: - Gesture handler
-    func tapGestureRecognized(gesture: UITapGestureRecognizer){
+    func tapGestureRecognized(_ gesture: UITapGestureRecognizer){
         if viewIsPokerCard{
             if let indexPath = self.pokerViewIndexPath{
                 if self.pokerIsFacingUp{
@@ -233,30 +233,30 @@ import UIKit
         }
     }
     
-    func panGestureRecognized(gesture: UIPanGestureRecognizer){
+    func panGestureRecognized(_ gesture: UIPanGestureRecognizer){
         if pokerIsMoveable{
             switch gesture.state {
-            case .Began:
+            case .began:
                 if let indexPath = self.pokerViewIndexPath{
                     viewMoveDelegate?.handlePokerViewMoveBegan(atIndexPath: indexPath)
                 }
-            case .Changed:
+            case .changed:
                 if let suView = self.superview{
-                    let translation = gesture.translationInView(suView)
+                    let translation = gesture.translation(in: suView)
                     if let indexPath = self.pokerViewIndexPath{
                         viewMoveDelegate?.handlePokerViewMoveChanged(atIndexPath: indexPath, translation: translation)
                     }
-                    gesture.setTranslation(CGPointZero, inView: suView)
+                    gesture.setTranslation(CGPoint.zero, in: suView)
                 }
-            case .Ended:
+            case .ended:
                 if let indexPath = self.pokerViewIndexPath{
                     viewMoveDelegate?.handlePokerViewMoveEnd(atIndexPath: indexPath)
                 }
-            case .Cancelled:
+            case .cancelled:
                 if let indexPath = self.pokerViewIndexPath{
                     viewMoveDelegate?.handlePokerViewMoveCancelled(atIndexPath: indexPath)
                 }
-            case .Failed:
+            case .failed:
                 if let indexPath = self.pokerViewIndexPath{
                     viewMoveDelegate?.handlePokerViewMoveFailed(atIndexPath: indexPath)
                 }

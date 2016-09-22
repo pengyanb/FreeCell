@@ -1,60 +1,57 @@
 
+/* Class = "UILabel"; text = "Rank"; ObjectID = "4u3-yu-1GI"; */
+"4u3-yu-1GI.text" = "Rank";
+
 /* Class = "UINavigationItem"; title = "Moves: 0 Time: 00:00"; ObjectID = "AWq-Gq-6Zp"; */
 "AWq-Gq-6Zp.title" = "Moves: 0 Time: 00:00";
+
+/* Class = "UILabel"; text = "Score"; ObjectID = "Blp-PD-8dl"; */
+"Blp-PD-8dl.text" = "Score";
+
+/* Class = "UILabel"; text = "Sound effects"; ObjectID = "Fw5-38-SRT"; */
+"Fw5-38-SRT.text" = "Sound effects";
+
+/* Class = "UISegmentedControl"; GCA-ZE-EGA.segmentTitles[0] = "On"; ObjectID = "GCA-ZE-EGA"; */
+"GCA-ZE-EGA.segmentTitles[0]" = "On";
+
+/* Class = "UISegmentedControl"; GCA-ZE-EGA.segmentTitles[1] = "Off"; ObjectID = "GCA-ZE-EGA"; */
+"GCA-ZE-EGA.segmentTitles[1]" = "Off";
+
+/* Class = "UISegmentedControl"; GJu-li-wzZ.segmentTitles[0] = "On"; ObjectID = "GJu-li-wzZ"; */
+"GJu-li-wzZ.segmentTitles[0]" = "On";
+
+/* Class = "UISegmentedControl"; GJu-li-wzZ.segmentTitles[1] = "Off"; ObjectID = "GJu-li-wzZ"; */
+"GJu-li-wzZ.segmentTitles[1]" = "Off";
+
+/* Class = "UIBarButtonItem"; title = "Game Center Rank"; ObjectID = "Oad-4Y-Tv6"; */
+"Oad-4Y-Tv6.title" = "Game Center Rank";
 
 /* Class = "UIBarButtonItem"; title = "⚙"; ObjectID = "QsI-xe-w6J"; */
 "QsI-xe-w6J.title" = "⚙";
 
-/* Class = "UIBarButtonItem"; title = "New Game"; ObjectID = "uQ5-J9-oLZ"; */
-"uQ5-J9-oLZ.title" = "新游戏";
-
-
-
-/* Class = "UILabel"; text = "Rank"; ObjectID = "4u3-yu-1GI"; */
-"4u3-yu-1GI.text" = "排名";
-
-/* Class = "UILabel"; text = "Score"; ObjectID = "Blp-PD-8dl"; */
-"Blp-PD-8dl.text" = "分数";
-
-/* Class = "UILabel"; text = "Sound effects"; ObjectID = "Fw5-38-SRT"; */
-"Fw5-38-SRT.text" = "音效";
-
-/* Class = "UISegmentedControl"; GCA-ZE-EGA.segmentTitles[0] = "On"; ObjectID = "GCA-ZE-EGA"; */
-"GCA-ZE-EGA.segmentTitles[0]" = "开";
-
-/* Class = "UISegmentedControl"; GCA-ZE-EGA.segmentTitles[1] = "Off"; ObjectID = "GCA-ZE-EGA"; */
-"GCA-ZE-EGA.segmentTitles[1]" = "关";
-
-/* Class = "UISegmentedControl"; GJu-li-wzZ.segmentTitles[0] = "On"; ObjectID = "GJu-li-wzZ"; */
-"GJu-li-wzZ.segmentTitles[0]" = "开";
-
-/* Class = "UISegmentedControl"; GJu-li-wzZ.segmentTitles[1] = "Off"; ObjectID = "GJu-li-wzZ"; */
-"GJu-li-wzZ.segmentTitles[1]" = "关";
-
-/* Class = "UIBarButtonItem"; title = "Game Center Rank"; ObjectID = "Oad-4Y-Tv6"; */
-"Oad-4Y-Tv6.title" = "游戏中心排名";
-
-
 /* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "VOk-Ja-edI"; */
-"VOk-Ja-edI.title" = "返回";
+"VOk-Ja-edI.title" = "Back";
 
 /* Class = "UILabel"; text = "time"; ObjectID = "bb5-8P-ksf"; */
-"bb5-8P-ksf.text" = "时间";
+"bb5-8P-ksf.text" = "time";
 
 /* Class = "UILabel"; text = "Show tutorial"; ObjectID = "laF-fz-SYI"; */
-"laF-fz-SYI.text" = "显示教程";
+"laF-fz-SYI.text" = "Show tutorial";
 
 /* Class = "UIButton"; normalTitle = "Show Top Scores"; ObjectID = "ml0-ia-Pc2"; */
-"ml0-ia-Pc2.normalTitle" = "显示成绩排名";
+"ml0-ia-Pc2.normalTitle" = "Show Top Scores";
 
 /* Class = "UILabel"; text = "Auto Complete"; ObjectID = "oiy-YD-Tcc"; */
-"oiy-YD-Tcc.text" = "自动完成";
+"oiy-YD-Tcc.text" = "Auto Complete";
+
+/* Class = "UIBarButtonItem"; title = "New Game"; ObjectID = "uQ5-J9-oLZ"; */
+"uQ5-J9-oLZ.title" = "New Game";
 
 /* Class = "UINavigationItem"; title = "Top Scores"; ObjectID = "v5a-vb-dF8"; */
-"v5a-vb-dF8.title" = "成绩排名";
+"v5a-vb-dF8.title" = "Top Scores";
 
 /* Class = "UISegmentedControl"; vmh-8j-BSK.segmentTitles[0] = "Yes"; ObjectID = "vmh-8j-BSK"; */
-"vmh-8j-BSK.segmentTitles[0]" = "是";
+"vmh-8j-BSK.segmentTitles[0]" = "Yes";
 
 /* Class = "UISegmentedControl"; vmh-8j-BSK.segmentTitles[1] = "No"; ObjectID = "vmh-8j-BSK"; */
-"vmh-8j-BSK.segmentTitles[1]" = "否";
+"vmh-8j-BSK.segmentTitles[1]" = "No";
